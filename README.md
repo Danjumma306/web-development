@@ -1,1 +1,1 @@
-# web-developmeny
+# web-development
