@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wireless Mouse - Product Details</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Computer Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="product-detail">
+    <div class="detail-container">
+      <img src="https://m.media-amazon.com/images/I/31AvWW7r%2BWL._SL500_.jpg" alt="Wireless Mouse" class="detail-img">
+      <div class="details">
+        <h2>Wireless Mouse</h2>
+        <p>Ergonomic and responsive wireless mouse designed for long working sessions.</p>
+        <ul>
+          <li>2.4GHz Wireless Connection</li>
+          <li>Rechargeable Battery</li>
+          <li>Adjustable DPI Levels</li>
+          <li>Lightweight and ergonomic</li>
+        </ul>
+        <span class="price">$40</span>
+        <button onclick="addToCart('Wireless Mouse', 40)">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Computer Store. All rights reserved.
+  </footer>
+</body>
+</html>

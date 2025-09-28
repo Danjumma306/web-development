@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - Computer Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Computer Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Our Products</h2>
+
+    <!-- 🔍 Search & Filters -->
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search products...">
+      <select id="category-filter">
+        <option value="all">All Categories</option>
+        <option value="laptops">Laptops</option>
+        <option value="desktops">Desktops</option>
+        <option value="accessories">Accessories</option>
+      </select>
+      <select id="price-filter">
+        <option value="all">All Prices</option>
+        <option value="0-500">Under $500</option>
+        <option value="500-1000">$500 - $1000</option>
+        <option value="1000-2000">$1000 - $2000</option>
+      </select>
+    </div>
+
+    <!-- 💻 Laptops Section -->
+    <section>
+      <h3 class="category-title">Laptops</h3>
+      <div class="products" id="product-list">
+        <div class="product" data-category="laptops" data-price="1200">
+          <a href="product-laptop1.html">
+            <img src="https://image.made-in-china.com/365f3j00fWtVUIDCmGcR/15-6-Inch-Generic-Laptop-Computer-Intel-Celeron-J3160-Quad-Core-8g-RAM-256g-SSD-Win10-Ultrabook-1980-1080-HD-Notebook.webp" alt="Laptop 1" height="300" width="300">
+          </a>
+          <h4>Laptop Pro 15"</h4>
+          <p>Powerful laptop for professionals.</p>
+          <span class="price">$1200</span>
+          <button onclick="addToCart('Laptop Pro 15', 1200)">Add to Cart</button>
+        </div>
+        <div class="product" data-category="laptops" data-price="900">
+          <a href="product-laptop2.html">
+            <img src="https://s.alicdn.com/@sc04/kf/Hb989db06a1064f598b9a7fd862a875fdq/Cheapest-Small-Laptop-14.1-Inch-Dual-Core-Dual-Thread-1920-1080-Win-11-Office-Laptop.png_300x300.jpg" alt="Laptop 2" height="300" width="300">
+          </a>
+          <h4>Laptop Air 13"</h4>
+          <p>Lightweight and portable laptop.</p>
+          <span class="price">$900</span>
+          <button onclick="addToCart('Laptop Air 13', 900)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🖥️ Desktops Section -->
+    <section>
+      <h3 class="category-title">Desktops</h3>
+      <div class="products">
+        <div class="product" data-category="desktops" data-price="1500">
+          <a href="product-desktop1.html">
+            <img src="images/desktop-ultra.jpeg" alt="Desktop 1" height="202" width="250">
+          </a>
+          <h4>Desktop Ultra</h4>
+          <p>High-performance desktop for gaming and work.</p>
+          <span class="price">$1500</span>
+          <button onclick="addToCart('Desktop Ultra', 1500)">Add to Cart</button>
+        </div>
+        <div class="product" data-category="desktops" data-price="1000">
+          <a href="product-desktop2.html">
+            <img src="https://f.nooncdn.com/p/pzsku/Z5AA1A9DD69E7B6F543C8Z/45/_/1727170479/3f9acb36-a9f5-4756-9fa8-080a50551dfa.jpg?width=800" alt="Desktop 2" height="300" width="300">
+          </a>
+          <h4>Desktop Mini</h4>
+          <p>Compact and efficient desktop for office use.</p>
+          <span class="price">$1000</span>
+          <button onclick="addToCart('Desktop Mini', 1000)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🎧 Accessories Section -->
+    <section>
+      <h3 class="category-title">Accessories</h3>
+      <div class="products">
+        <div class="product" data-category="accessories" data-price="40">
+          <a href="product-mouse.html">
+            <img src="https://m.media-amazon.com/images/I/31AvWW7r%2BWL._SL500_.jpg" alt="Mouse" height="300" width="300">
+          </a>
+          <h4>Wireless Mouse</h4>
+          <p>Ergonomic and responsive wireless mouse.</p>
+          <span class="price">$40</span>
+          <button onclick="addToCart('Wireless Mouse', 40)">Add to Cart</button>
+        </div>
+        <div class="product" data-category="accessories" data-price="80">
+          <a href="product-keyboard.html">
+            <img src="https://m.media-amazon.com/images/I/6131sl1d6-L._UF1000,1000_QL80_.jpg" alt="Keyboard" height="300" width="300">
+          </a>
+          <h4>Mechanical Keyboard</h4>
+          <p>Durable keyboard with backlit keys.</p>
+          <span class="price">$80</span>
+          <button onclick="addToCart('Mechanical Keyboard', 80)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Computer Store. All rights reserved.
+  </footer>
+</body>
+</html>

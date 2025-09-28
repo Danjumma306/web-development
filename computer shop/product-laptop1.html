@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laptop Pro 15 - Product Details</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Computer Store</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-link">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>
+
+  <main class="product-detail">
+    <div class="detail-container">
+    <img src="images/laptop1.avif" alt="Laptop Pro 15" class="detail-img" height="300" width="300">
+    <div class="details">
+      <h2>Laptop Pro 15"</h2>
+      <p>Experience blazing speed and performance with the Laptop Pro 15, designed for professionals and creators.</p>
+      <ul>
+        <li>15" Retina Display</li>
+        <li>16GB RAM, 512GB SSD</li>
+        <li>Intel i7 Processor</li>
+      </ul>
+      <span class="price">$1200</span>
+      <button onclick="addToCart('Laptop Pro 15', 1200)">Add to Cart</button>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Computer Store. All rights reserved.
+  </footer>
+</body>
+</html>
