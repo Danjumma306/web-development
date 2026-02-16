@@ -1,0 +1,81 @@
+.parent{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.children{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+}
+
+body{
+    
+    background-color: hsl(0, 0%, 8%);
+    height: 600px;
+    justify-items: center;
+}
+
+#card{
+    
+    text-align: center;
+    background-color: hsl(0, 0%, 12%);
+    align-content: center;
+    padding: 10px;
+    /* max-height: 400px;
+    max-width: 500px;  */
+    height: 80vh;
+    width: 38vh;
+    color: white;
+    border-radius: 2%;
+    margin-top: 10vh;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+img{
+    height: 13vh;
+    width: 25%;
+    border-radius: 100%;
+}
+h3 {
+    color: hsl(75, 94%, 57%);
+}
+
+
+
+/* Normal state styles */
+button {
+  background-color: hsl(0, 0%, 20%); /* Blue background */
+  color: white;             /* White text */
+         /* Some padding */
+  border: none;             /* Remove default border */
+  cursor: pointer;          /* Change mouse cursor to a hand */
+  transition: background-color 0.3s ease; /* Smooth transition for color changes */
+  
+  max-height: 700px;
+  max-width: 500px;
+  height: 7%;
+  width: 80%;
+  border-radius: 5px;
+  font-weight: bold;
+  
+  cursor: pointer;
+
+}
+
+/* Hover state styles */
+button:hover {
+  background-color: hsl(75, 94%, 57%);  /* Darker blue on hover */
+  color: hsl(0, 0%, 8%);
+}
+
+.attribution{
+    padding: 12%;
+    color: white;
+}
+p{
+    font-size: 14px;
+}
+
